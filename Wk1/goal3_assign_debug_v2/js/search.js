@@ -55,7 +55,7 @@
 		
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			// save a lowercase variable of the video title
-			// this states that each
+			// this creates variables for each title and each item for later display
 			var dbTitleEnd = db[i].indexOf('|');
 			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);
 			
