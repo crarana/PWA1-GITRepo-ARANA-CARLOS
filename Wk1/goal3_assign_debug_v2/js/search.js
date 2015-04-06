@@ -14,6 +14,7 @@
 	;
 	
 	// Validates search query
+	// this is important so that the search query is valid to be checked against the array. This would limit excessive/irrelevant results respectively.
 	var validqte == function(query){
 		
 		// Trim whitespace from start and end of search query
@@ -37,19 +38,24 @@
 	};
 	
 	// Finds search matches
+	// this function is used to search the database with the parameters set by the query
 	var search = function(query)
 		
 		// split the user's search query string into an array
+		// this array is created to separate the words into separate pieces to be cross-referenced with the database
 		var queryArray = query.join(" ");
 		
 		// array to store matched results from database.js
+		// this array is used to store the results that match each word
 		var results = [];
 
 		// loop through each index of db array
+		// this loop searches for each item in the database that matches the array
 		for(var i=0, j=db.length; i<j; i++){
 		
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			// save a lowercase variable of the video title
+			// this states that each
 			var dbTitleEnd = db[i].indexOf('|');
 			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);
 			
