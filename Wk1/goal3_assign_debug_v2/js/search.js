@@ -73,10 +73,13 @@
 			;
 		;
 		
+		//this function sorts the results found
 		results.sort();
 		
 		// Check that matches were found, and run output functions
+		//conditional statement which shows results as long as there are results
 		if(results.length = 0){
+			//this is the function that is referenced below on line 91
 			noMatch();
 		}else{
 			showMatches(results);
@@ -84,6 +87,7 @@
 	};
 	
 	// Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
+	//this function shows that no results were found
 	var noMatch = function(){
 		var html = ''+
 			'<p>No Results found.</p>'+
