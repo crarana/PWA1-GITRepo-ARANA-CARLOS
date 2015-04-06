@@ -97,6 +97,7 @@
 	};
 	
 	// Put matches into page as paragraphs with anchors
+	//this function shows results structure
 	var showMatches = function(results){
 		
 		// THE NEXT 4 LINES ARE CORRECT.
@@ -106,6 +107,7 @@
 		;
 		
 		// loop through all the results search() function
+		//a loop that increments each result and displays them as follows
 		for(var i=0, j=results.length; i<j; i++){
 		
 			// title of video ends with pipe
