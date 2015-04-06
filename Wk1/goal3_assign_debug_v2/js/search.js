@@ -79,7 +79,7 @@
 		// Check that matches were found, and run output functions
 		//conditional statement which shows results as long as there are results
 		if(results.length = 0){
-			//this is the function that is referenced below on line 91
+			//this is the function that is referenced below on line 91-97
 			noMatch();
 		}else{
 			showMatches(results);
