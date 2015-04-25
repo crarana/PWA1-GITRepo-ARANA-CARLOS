@@ -1,7 +1,7 @@
 /* 
  Name: Carlos Arana
- Date: 04/04/2015
- Assignment: Goal1: Assignment Duel1
+ Date: 04/24/2015
+ Assignment: Goal4: Assignment Duel3
 */
 
 //self-executing function
